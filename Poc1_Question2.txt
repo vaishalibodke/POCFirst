@@ -1,0 +1,90 @@
+CORE JAVA LAB EXERCISE STAGE-1
+
+************************************************************************************************************************
+
+2. Concept of method implementation
+Write a program to create ‘Square’ and ‘Rectangle’ class.
+i. Implement methods to calculate area and perimeter of square and rectangles.
+These two methods are going to take side as argument in square and length and
+breadth in case of rectangle.
+ii. Create a ‘MainClass’ in which define main method ,in which create two object for
+each Square and Rectangle class, Now calculate then show area and perimeter in
+the console after providing appropriate values for side , length & breadth using
+methods of these classes
+
+******************************************************* Program 2 *******************************************************
+
+class  Sqaure{
+	int calculateAreaOFSquare(int side)
+	{
+		int areaOfSqaure = side * side;
+		return areaOfSqaure;
+	}
+	int calculatePerimeterOfSquare(int side)
+	{
+		int perimeterOfSqaure = side + side + side + side;
+		return perimeterOfSqaure;
+
+	}
+}
+class Rectangle {
+	int calulateAreaOfRectangle(int length,int breadth)
+	{
+		int areaOfRectangle = length * breadth;
+		return areaOfRectangle;
+
+	}
+	int calculatePerimeterOfRectangle(int length, int breadth)
+	{
+		int perimeterOfRectangle = length + breadth + length + breadth;
+		return perimeterOfRectangle;
+	}
+
+
+}
+class MainClass
+{
+	public static void main(String[] args) 
+	{
+		int side = 5;
+		int length = 6;
+		int breadth = 2;
+	
+		Sqaure areasquare = new Sqaure();
+		Sqaure perimetersquare = new Sqaure();
+		int result1 = areasquare.calculateAreaOFSquare(side);
+		int result2 = perimetersquare.calculatePerimeterOfSquare(side);
+		System.out.println("Area Is: " + result1);
+		System.out.println("Perimeter is: " + result2);
+		
+
+		Rectangle arearectangle = new Rectangle();
+		Rectangle perimeterrectangle = new Rectangle();
+		int result3 = arearectangle.calulateAreaOfRectangle(length, breadth);
+		int result4 = perimeterrectangle.calculatePerimeterOfRectangle(length, breadth);
+		System.out.println("Area Is: " + result3);
+		System.out.println("Perimeter is: " + result4);
+	}
+}
+
+**************************************************** CONSOLE OUTPUT *********************************************************
+
+C:\WorkSpaceEP\POC1>javac MainClass.java
+
+C:\WorkSpaceEP\POC1>java MainClass
+Area Is: 4
+Perimeter is: 8
+Area Is: 4
+Perimeter is: 8
+
+C:\WorkSpaceEP\POC1>javac MainClass.java
+
+C:\WorkSpaceEP\POC1>java MainClass
+Area Is: 25
+Perimeter is: 20
+Area Is: 12
+Perimeter is: 16
+
+C:\WorkSpaceEP\POC1>
+
+********************************************************************************************************************************
