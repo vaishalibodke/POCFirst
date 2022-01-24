@@ -1,0 +1,59 @@
+**********************************************************************************************************************************
+
+CORE JAVA LAB EXERCISE STAGE-1
+
+********************************************************** PROBLEM STATEMENT *****************************************************
+1. Concept of Class and Object
+i. Write a program to create ‘Student’ class with rollNo and name as two instance
+variables.
+ii. Create two objects student1, student2 for the Student class and assign any
+appropriate values to the objects. Display the Object content on a Console
+
+********************************************************** PROGRAM 1 *************************************************************
+
+class Student 
+{
+	int rollNo;
+	String name;
+
+	public static void main(String[] args) 
+	{
+		Student student1 = new Student();
+		Student student2 = new Student();
+
+		student1.rollNo = 1;
+		student1.name = "Vaishali";
+		student2.rollNo = 2;
+		student2.name = "Shrikrushna";
+
+
+		System.out.println("Student Roll No Is : "+student1.rollNo);
+		System.out.println("Student Name Is : "+student1.name);
+		System.out.println("Student Roll No Is : "+student2.rollNo);
+		System.out.println("Student Name Is : "+student2.name);
+
+
+	}
+}
+
+*********************************************************** CONSOLE OUTPUT *********************************************************
+C:\WorkSpaceEP\POC1>javac Student.java
+
+C:\WorkSpaceEP\POC1>java Student
+Student Roll No Is : 1
+Student Name Is : Vaishali
+Student Roll No Is : 2
+Student Name Is : Shrikrushna
+
+C:\WorkSpaceEP\POC1>javac Student.java
+
+C:\WorkSpaceEP\POC1>java Student
+Student Roll No Is : 1
+Student Name Is : Vaishali
+Student Roll No Is : 2
+Student Name Is : Shrikrushna
+
+C:\WorkSpaceEP\POC1>
+
+**************************************************************************************************************************************
+
