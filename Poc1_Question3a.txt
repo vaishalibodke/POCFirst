@@ -1,0 +1,53 @@
+***************************************************************************************************************************************
+
+CORE JAVA LAB EXERCISE STAGE-1
+
+********************************************************* RROBLEM STATEMENT ***********************************************************
+
+3. Initialize On Object Creation
+i. Create a class Car which contains wheels and model as Instance variables.
+ii. Initialize the number of wheels of the car at the time of creating the Object of the 
+car and assign the model of the car to the model variable and print the model after 
+creating the object of the car class(not at the time of creating the object).
+
+************************************************************ PROGRAM 3 *****************************************************************
+
+class Car 
+{
+	int wheels;
+	String model;
+
+	Car(int wheels,String model)
+	{
+		this.wheels = wheels;
+		this.model = model;
+		System.out.println("Wheels of the car is : \t"+wheels);
+	}
+	public static void main(String[] args)
+	{
+		Car obj = new Car(4,"Rapid Scoda");
+
+		System.out.println("Model of the car is:\t"+obj.model);
+	}
+}
+
+********************************************************* CONSOLE OUTPUT ****************************************************************
+C:\WorkSpaceEP\Basic>javac Car.java
+
+C:\WorkSpaceEP\Basic>java
+
+C:\WorkSpaceEP\Basic>java Car
+Wheels of the car is :  4
+Model of the car is:    Rapid Scoda
+
+C:\WorkSpaceEP\Basic>javac Car.java
+
+C:\WorkSpaceEP\Basic>java Car
+Wheels of the car is :  4
+Model of the car is:    Rapid Scoda
+
+C:\WorkSpaceEP\Basic>
+
+*****************************************************************************************************************************************
+
+
